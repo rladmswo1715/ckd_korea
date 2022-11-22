@@ -1,0 +1,77 @@
+.login-wrap{
+    width: 100%; height: 100vh; background-image: linear-gradient(90deg, rgb(216,233,227) 50%, white 50%);
+    max-width: 1920px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.login-wrap .login-box{background: white; padding: 3%; box-shadow: 0px 2px 20px rgb(0 0 0 / 15%);}
+.login-wrap .login-form .logo{margin-bottom: 10%;}
+.login-wrap .login-form .logo p{font-size: 20px;}
+
+.box{
+    border: 1px solid #d2d2d2;
+    padding: 15px 20px;
+    display: block;
+    margin-bottom: 3%;
+    border-radius: 5px;
+    text-indent: 15%;
+    font-size: 1em;
+    /*        width: 110%; height: */
+    width: 100%;
+    /* padding-left: 20px; */
+    /* height: 50px; */
+}
+.box::placeholder{color: #999999; font-size: 0.8em;}
+.box:focus{
+    outline: none; border-color: #009B64;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.5); 
+}
+.id{
+    background-image: url(../img/id.png);
+    background-position: 10px 7px;
+    background-repeat: no-repeat;
+}
+.pw{
+    background-image: url(../img/pw.png);
+    background-repeat: no-repeat;
+    background-position: 10px 7px;
+    
+}
+.btn{
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    background: #009B64;
+    border-style: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    color: white;
+    margin-top: 5%;
+    
+}
+label{font-size: 0.8em;}
+
+/*체크 박스와 라디오 박스를 다르게 효과 주는 방법*/
+input[type="checkbox"]{display: none;}   /*기존 체크 박스는 지워준다*/
+input[type="checkbox"] + label{position: relative; padding-left: 20px;} /*체크박스 라벨 옆에 들어가기때문에 라벨을 부모로 지정하고 옆 공간을 만든다*/
+input[type="checkbox"] + label::before{                                  
+    content: ""; position: absolute; top: 0; left: 0;
+    width: 15px; height: 15px; background-image: url(off.png);
+    background-size: cover;
+    /*새로운 체크박스를 넣는 과정(off): 비포를 사용하고 길이와 높이값은 사진 크기로 지정하지만 너무 큰 경우 길이와 높이값을 줄이고 백그라운드 커버를 넣어준다
+    (- 크기에 맞게 해주는 역할/ 넣지 않으면 찌그러진다)*/
+    
+}
+input[type="checkbox"]:checked + label::before{
+    content: ""; position: absolute; top: 0; left: 0;
+    width: 15px; height: 15px; background-image: url(on.png);
+    background-size: cover;
+    /*체크 박스 클릭시(on) : 위와 같이 비포를 넣지만 인풋[타입="체크박스"]에 체크가 됐을 때!!라는 의미로 :checked를 붙여준다*/
+}
+/* 마찬가지로 라디오 박스도 위와같이 해준다!! */
+input[type="radio"]{display: none;}
+input[type="radio"] + label{position: relative; padding-left: 20px;}
+input[type="radio"] + label::before{content: ""; position: absolute; top: 0; left: 0; width: 15px; height: 15px; background-image: url(radiooff.png); background-size: cover;}
+input[type="radio"]:checked + label::before{content: ""; position: absolute; top: 0; left: 0; width: 15px; height: 15px; background-image: url(radioon.png); background-size: cover;}

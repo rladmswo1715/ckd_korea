@@ -1,0 +1,182 @@
+.join-wrap{width: 100%; max-width: 1200px; margin: 0 auto;}
+.join-wrap .container .content .title-box{text-align: center; margin-top: 15%; margin-bottom: 5%;}
+.join-wrap .container .content .title-box h3.tit{font-size: 50px;}
+.join-wrap .container .content .title-box p.sub-tit{font-size: 17px; margin-top: 2%; line-height: 1.4; color: #666;}
+.join-wrap .container .content .title-box ul{margin-top: 2%;}
+
+.join-wrap .container .content .join-cont-box{margin: 0 auto;}
+.join-wrap .container .content .join-cont-box .step-box{}
+.join-wrap .container .content .join-cont-box .step-box ol{
+    display: flex; text-align: center; overflow: hidden; margin-bottom: 0.7%;
+}
+.join-wrap .container .content .join-cont-box .step-box ol li{
+    width: 50%; background: #f2f2f2; color: #555;
+}
+.join-wrap .container .content .join-cont-box .step-box ol li.on{
+    background: #009B64; color: white;
+}
+.join-wrap .container .content .join-cont-box .step-box ol li dl{
+    display: flex; align-items: center; justify-content: center;
+    height: 60px; font-size: 18px;
+}
+.join-wrap .container .content .join-cont-box .step-box ol li dt{
+    font-weight: 700; margin-right: 0.7%; opacity: 0.4;
+}
+.join-wrap .container .content .join-cont-box .step-box ol li dd{}
+
+.join-wrap .container .content .join-info-box{}
+.join-wrap .container .content .join-info-box .join-form{position: relative;}
+.join-wrap .container .content .join-info-box p.sign{color: #464646; font-size: 14px; text-align: right; margin-bottom: 15px;}
+.join-wrap .container .content .join-info-box span.sign-icon{color: #cf0505; margin: 0 3px 0 0; vertical-align: middle;}
+
+.join-wrap .container .content .join-info-box table.join-table{
+    width: 100%;
+    font-size: 16px;
+    border-top: 1px solid #333;
+}
+.join-wrap .container .content .join-info-box table.join-table tr{}
+.join-wrap .container .content .join-info-box table.join-table th{
+    color: #000;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: left;
+    height: 40px;
+    padding: 15px 0;
+    letter-spacing: -0.5px;
+    border-bottom: 1px solid #ddd;
+}
+.join-wrap .container .content .join-info-box table.join-table td{
+    color: #444;
+    font-size: 14px;
+    padding: 15px;
+    height: 40px;
+    padding: 15px 0;
+    letter-spacing: -0.5px;
+    border-bottom: 1px solid #ddd;
+}
+.join-wrap .container .content .join-info-box table.join-table td .join-fieldset{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 380px;
+    flex-wrap: wrap;
+    flex: 1; border: 0;
+}
+.join-wrap .container .content .join-info-box table.join-table td input{}
+
+.join-table td input.input-basic, .email-fieldset .select-basic, .join-table .select-basic{
+    height: 42px;
+    width: 100%;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    font-size: 1em;
+    color: #444;
+    text-indent: 1em;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.join-table td input.input-basic:focus, .email-fieldset .select-basic:focus, .join-table .select-basic:focus{
+    border: 1px solid #333;
+    background-color: #fff;
+    outline: none;
+}
+/* 이메일 */
+table.join-table .email-fieldset{
+    max-width: 410px;
+}
+table.join-table .email-fieldset .input-basic, table.join-table .email-fieldset .select-basic{
+    width: calc(33.33% - 13px) !important;
+}
+table.join-table .hypen{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    text-align: center;
+}
+table.join-table .w4{}
+table.join-table .w5{}
+table.join-table td .join-fieldset:not(.add-fieldset) .join-sub-btn{
+    float: none; position: absolute; left: 100%;
+}
+table.join-table td input[read-only]{cursor:default; color: #999;}
+
+/* 버튼 */
+table.join-table .join-sub-btn{
+    float: left;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    padding: 0 10px;
+    height: 40px;
+    margin-left: 5px;
+    border: 1px solid #645c54;
+    vertical-align: middle;
+    text-align: center;
+    color: #645c54;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    background: white;
+}
+table.join-table .join-sub-btn:hover{background: #009B64;color: white;}
+
+table.join-table .confirm-txt{}
+table.join-table .sub-txt2{display: block; margin-top: 10px;color: #666;letter-spacing: -0.02em;}
+table.join-table .sub-txt1{margin-left: 10px;color: #666;letter-spacing: -0.02em;}
+table.join-table .form-txt-box{}
+table.join-table .form-txt-box side-txt{}
+table.join-table .ok-txt{color: #0095ff; font-weight: 400;}
+table.join-table .caution-txt{color: #ff3800; font-weight: 400;}
+
+/* 주소 */
+table.join-table .add-fieldset{}
+table.join-table .add-fieldset .input-basic{display:block; margin-top: 6px;}
+table.join-table .add-fieldset .input-basic:first-child{margin-top: 0;}
+table.join-table .add-fieldset .w3{}
+table.join-table .add-fieldset .sub-btn-input{width: calc(100% - 116px) !important;}
+table.join-table .add-fieldset .w1{}
+
+table.join-table .form-txt-box{display: flex; align-items: center;}
+table.join-table .form-txt-box .w5{}
+
+table.join-table .input-check{}
+
+.input-check label{vertical-align: middle;}
+
+
+/* 하단가입버튼 */
+.join-wrap .bot-btn{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 7%;
+}
+.join-wrap .bot-btn .join-finish{
+    background: #35403b;
+}
+.join-wrap .bot-btn .join-finish:hover{background: #DFEAE6; color: #000;}
+.join-wrap .bot-btn button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    height: 60px;
+    border: 0;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    font-size: 17px;
+    margin: 0 2px 5px 2px;
+    cursor: pointer;
+    vertical-align: top;
+    text-align: center;
+    font-weight: 400;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
